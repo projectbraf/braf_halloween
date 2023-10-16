@@ -1,4 +1,25 @@
 name = "BRAF Halloween Extras"
 author = "BRAF Team & Ludwig"
-prefix = "halloween"
+prefix = "braf_halloween"
 mainprefix = "braf"
+
+[properties]
+AUTHOR = "BRAF Team & Ludwig"
+URL = "https://brafmod.com.br"
+REQUIREDVERSION = '0.1'
+
+[version]
+git_hash = 0
+major = 1    # Overrides path when set
+minor = 0
+patch = 4
+build = 3    # Optional
+
+[hemtt.config]
+preset = "Hemtt"
+
+[hemtt.launch]
+workshop = [
+    "450814997",  # CBA_A3
+    "2223739438", # BRAF Mod
+]
