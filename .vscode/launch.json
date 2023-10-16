@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "p:/braf_halloween/addons/braf_halloween_uniform",
-      "program": "p:/braf_halloween/addons/braf_halloween_uniform/build/Debug/outDebug",
+      "cwd": "p:/braf_halloween/addons/uniform",
+      "program": "p:/braf_halloween/addons/uniform/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
