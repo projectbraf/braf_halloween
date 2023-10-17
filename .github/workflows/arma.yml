@@ -34,9 +34,9 @@ jobs:
     - name: Run HEMTT build
       run: hemtt build
     - name: Rename build folder
-      run: mv .hemttout/build .hemttout/@ace
+      run: mv .hemttout/build .hemttout/@braf_halloween
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ace3-${{ github.sha }}-nobin
+        name: braf_halloween-${{ github.sha }}-nobin
         path: .hemttout/@*
