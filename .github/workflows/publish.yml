@@ -24,13 +24,6 @@ jobs:
               uses: arma-actions/hemtt@v1
             - name: Run HEMTT build
               run: hemtt release
-            - name: Rename build folder
-              run: mv .hemttout/release .hemttout/@mod
-            - name: Upload Release to Steam Workshop
-              uses: actions/upload-artifact@v3
-              with:
-                  name: braf_halloween-${{ github.sha }}
-                  path: .hemttout/@mod
             - name: Extract Zipped Mod
               run: unzip releases/braf_halloween-latest.zip -d releases
             - uses: arma-actions/workshop-upload@v1

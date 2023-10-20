@@ -24,11 +24,11 @@ jobs:
             - name: Setup HEMTT
               uses: arma-actions/hemtt@v1
             - name: Run HEMTT build
-              run: hemtt build
-            - name: Rename build folder
-              run: mv .hemttout/build .hemttout/@mod
+              run: hemtt release
+            - name: Extract Zipped Mod
+              run: unzip releases/braf_halloween-latest.zip -d releases
             - name: Upload Artifact
               uses: actions/upload-artifact@v3
               with:
                   name: braf_halloween-${{ github.sha }}
-                  path: .hemttout/@*
+                  path: releases/@braf_halloween
