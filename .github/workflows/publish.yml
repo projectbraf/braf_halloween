@@ -31,16 +31,13 @@ jobs:
               with:
                   name: braf_halloween-${{ github.sha }}
                   path: .hemttout/@mod
-            - name: Extract tgz
-              uses: ihiroky/extract-action@v1
-              with:
-                  file_path: releases/braf_halloween-latest.zip
-                  extract_dir: braf_halloween-latest
+            - name: Extract Zipped Mod
+              run: unzip releases/braf_halloween-latest.zip
             - uses: arma-actions/workshop-upload@v1
               with:
                   appId: '107410'
                   itemId: ${{ secrets.STEAM_WORKSHOP_ITEM_ID }}
-                  contentPath: braf_factions_latest
+                  contentPath: releases/braf_factions_latest
                   changelog: 'Update'
               env:
                   STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
