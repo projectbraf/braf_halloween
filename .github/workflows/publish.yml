@@ -31,9 +31,11 @@ jobs:
               with:
                   name: braf_halloween-${{ github.sha }}
                   path: .hemttout/@mod
-            - uses: montudor/action-zip@v1
+            - name: Extract tgz
+              uses: ihiroky/extract-action@v1
               with:
-                  args: zip -qq -r releases/braf_halloween-latest.zip braf_factions_latest
+                  file_path: releases/braf_halloween-latest.zip
+                  extract_dir: braf_halloween-latest
             - uses: arma-actions/workshop-upload@v1
               with:
                   appId: '107410'
