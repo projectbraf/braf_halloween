@@ -32,3 +32,12 @@ jobs:
               with:
                   name: braf_halloween-${{ github.sha }}
                   path: releases/@braf_halloween
+            - name: Discord notification
+              env:
+                  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+                  DISCORD_USERNAME: Saci
+                  DISCORD_AVATAR: https://scontent.fpoa33-1.fna.fbcdn.net/v/t1.6435-9/123089286_2720897204844263_4695033759855672932_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=810d5f&_nc_eui2=AeHYW_2fgJH67ADthIzboTmE_dndmKxNqvb92d2YrE2q9oc1UC5FYvsZ-cUbwpH19bbxxRLaBL159Gtrl1Ug8_dM&_nc_ohc=UeyYATHroS8AX_kcFzz&_nc_ht=scontent.fpoa33-1.fna&oh=00_AfBXqiIg5a0tqgq0jvWVk_tuAlejutmjUk8KgHP-EBLuGA&oe=655A728E
+                  DISCORD_EMBED: '{"content":"braf_halloweenacaboudeseratualizadonaSteamWorkshop!","tts":false,"embeds":[{"id":652627557,"title":"${{github.repository_owner}}-${{github.repository}}","description":"Commit${{github.sha}}","color":16515072,"fields":[],"author":{"name":"${{github.actor}}","url":"https://github.com/${{github.actor}}","icon_url":"https://avatars.githubusercontent.com/${{github.actor}}"}}],"components":[],"actions":{},"username":"Saci","avatar_url":"https://scontent.fpoa33-1.fna.fbcdn.net/v/t1.6435-9/123089286_2720897204844263_4695033759855672932_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=810d5f&_nc_eui2=AeHYW_2fgJH67ADthIzboTmE_dndmKxNqvb92d2YrE2q9oc1UC5FYvsZ-cUbwpH19bbxxRLaBL159Gtrl1Ug8_dM&_nc_ohc=UeyYATHroS8AX_kcFzz&_nc_ht=scontent.fpoa33-1.fna&oh=00_AfBXqiIg5a0tqgq0jvWVk_tuAlejutmjUk8KgHP-EBLuGA&oe=655A728E"}'
+              uses: Ilshidur/action-discord@master
+              with:
+                  args: '{{ EVENT_PAYLOAD.repository.full_name }} acabou de ser atualizado por ${{github.actor}}'
