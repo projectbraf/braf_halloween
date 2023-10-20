@@ -32,7 +32,7 @@ jobs:
                   name: braf_halloween-${{ github.sha }}
                   path: .hemttout/@mod
             - name: Extract Zipped Mod
-              run: unzip releases/braf_halloween-latest.zip
+              run: unzip releases/braf_halloween-latest.zip -d releases
             - uses: arma-actions/workshop-upload@v1
               with:
                   appId: '107410'
