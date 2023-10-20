@@ -30,12 +30,15 @@ jobs:
               uses: actions/upload-artifact@v3
               with:
                   name: braf_halloween-${{ github.sha }}
-                  path: .hemttout/@*
+                  path: .hemttout/@mod
+            - uses: montudor/action-zip@v1
+              with:
+                  args: zip -qq -r releases/braf_halloween-latest.zip braf_factions_latest
             - uses: arma-actions/workshop-upload@v1
               with:
                   appId: '107410'
                   itemId: ${{ secrets.STEAM_WORKSHOP_ITEM_ID }}
-                  contentPath: .hemttout/@mod
+                  contentPath: braf_factions_latest
                   changelog: 'Update'
               env:
                   STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
