@@ -23,9 +23,9 @@ jobs:
             - name: Setup HEMTT
               uses: arma-actions/hemtt@v1
             - name: Run HEMTT build
-              run: hemtt build
+              run: hemtt release
             - name: Rename build folder
-              run: mv .hemttout/build .hemttout/@mod
+              run: mv .hemttout/release .hemttout/@mod
             - name: Upload Release to Steam Workshop
               uses: actions/upload-artifact@v3
               with:
