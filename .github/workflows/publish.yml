@@ -43,4 +43,4 @@ jobs:
                   DISCORD_EMBED: '[{\"id\":652627557,\"title\":\"${{github.repository_owner}}-${{github.repository}}\",\"description\":\"Commit${{github.sha}}\",\"color\":16515072,\"fields\":[],\"author\":{\"name\":\"${{github.actor}}\",\"url\":\"https://github.com/${{github.actor}}\",\"icon_url\":\"https://avatars.githubusercontent.com/${{github.actor}}\"}}]'
               uses: Ilshidur/action-discord@master
               with:
-                  args: '{{ EVENT_PAYLOAD.repository.full_name }} acabou de ser atualizado e publico na Workshop por ${{github.actor}}'
+                  args: '{{ EVENT_PAYLOAD.repository.full_name }} acabou de ser atualizado e publicado na Workshop por ${{github.actor}}'
