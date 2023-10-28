@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "a:/hallow/braf_halloween",
-      "program": "a:/hallow/braf_halloween/build/Debug/outDebug",
+      "cwd": "p:/braf_halloween",
+      "program": "p:/braf_halloween/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
