@@ -1,7 +1,11 @@
 include = [
-  "logo_co.paa",
-  "logo_over_co.paa",
-  "logo_small.paa",
+  "BRAF_License_English.pdf",
+  "BRAF_License_Portuguese.pdf",
+  "logo.paa",
+  "logo_factions_ca.paa",
+  "logo_factions_over.paa",
+  "logo_factions_small.paa",
+  "picture.paa",
 ]
 
 name = "BRAF Halloween Extras"
