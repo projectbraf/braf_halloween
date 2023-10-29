@@ -12,7 +12,7 @@ REQUIREDVERSION = '0.1'
 git_hash = 0
 major = 1    # Overrides path when set
 minor = 0
-patch = 4
+patch = 5
 build = 3    # Optional
 
 [files]
