@@ -1,0 +1,2 @@
+![BRAF Halloween](picture.png)
+## BRAF Halloween is a open sourced mod that includes halloween themed content inspired in the brazilian culture as a dependency mod of the original [BRAF Mod](https://www.brafmod.com.br), feel free to make contributions or debug it, this repository uses github actions to automate the implementation of changes into the Steam Workshop, every merged pull request generates a workflows to check for any bugs and publish it into the Steam Workshop.
