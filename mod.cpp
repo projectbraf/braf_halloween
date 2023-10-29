@@ -8,3 +8,4 @@ actionName = "BRAF Mod";
 action = "https://brafmod.com.br";       // Website URL, that can be accessed from the expansions menu
 overview = "BRAF Mod Halloween extras"; // Supports structured text
 logoSmall = "logo_small.paa";            // Display in creative lists, next to the entities added by the mod
+// picture = "picture.paa";

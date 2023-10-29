@@ -20,6 +20,7 @@ include = [
   "logo_co.paa",
   "logo_over_co.paa",
   "logo_small.paa",
+  "picture.paa"
 ]
 
 [hemtt.config]
